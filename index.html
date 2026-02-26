@@ -1,58 +1,158 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
 <meta charset="UTF-8">
-<title>Política de Privacidad</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Política de Privacidad - MacroTRM</title>
+
 <style>
-body {
-    font-family: Arial, sans-serif;
-    max-width: 800px;
-    margin: auto;
-    padding: 20px;
-    line-height: 1.6;
+:root {
+    --primary: #1f2937;
+    --accent: #2563eb;
+    --bg: #f5f7fa;
+    --card: #ffffff;
+    --text: #374151;
+    --border: #e5e7eb;
 }
-h1, h2 {
-    color: #222;
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+}
+
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.header h1 {
+    color: var(--primary);
+    margin-bottom: 10px;
+}
+
+.header p {
+    color: #6b7280;
+    font-size: 14px;
+}
+
+.card {
+    background: var(--card);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    margin-bottom: 20px;
+    border: 1px solid var(--border);
+}
+
+.card h2 {
+    margin-top: 0;
+    color: var(--primary);
+    font-size: 18px;
+    border-left: 4px solid var(--accent);
+    padding-left: 10px;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 14px;
+    color: #6b7280;
+}
+a {
+    color: var(--accent);
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .container {
+        margin: 20px;
+        padding: 10px;
+    }
 }
 </style>
 </head>
+
 <body>
 
-<h1>Política de Privacidad</h1>
+<div class="container">
 
-<p>Última actualización: 2026</p>
+<div class="header">
+    <h1>Política de Privacidad</h1>
+    <p>MacroTRM – Última actualización: 2026</p>
+</div>
 
+<div class="card">
 <h2>1. Información General</h2>
-<p>La aplicación TRM Indicadores es una aplicación informativa que proporciona datos financieros de consulta pública.</p>
+<p>MacroTRM es una aplicación informativa que proporciona indicadores financieros de consulta pública, incluyendo la TRM y otros datos económicos.</p>
+</div>
 
+<div class="card">
 <h2>2. Datos Personales</h2>
-<p>Esta aplicación no solicita, almacena ni procesa directamente datos personales como nombre, correo electrónico, número de identificación o información financiera del usuario.</p>
+<p>La aplicación no solicita ni almacena directamente datos personales como nombre, correo electrónico, información bancaria o datos financieros del usuario.</p>
+</div>
 
-<h2>3. Servicios de Terceros</h2>
-<p>La aplicación utiliza servicios de terceros como Google AdMob para mostrar anuncios. Estos servicios pueden recopilar información automáticamente, incluyendo:</p>
+<div class="card">
+<h2>3. Información Recopilada Automáticamente</h2>
+<p>Servicios de terceros pueden recopilar información técnica automáticamente, incluyendo:</p>
 <ul>
 <li>Identificadores publicitarios del dispositivo</li>
-<li>Información técnica del dispositivo</li>
-<li>Datos de uso anónimos</li>
+<li>Información del sistema operativo</li>
+<li>Datos estadísticos de uso</li>
+<li>Dirección IP anonimizada</li>
 </ul>
+</div>
 
-<p>El tratamiento de estos datos es realizado directamente por dichos proveedores bajo sus propias políticas de privacidad.</p>
+<div class="card">
+<h2>4. Servicios de Terceros</h2>
+<p>La aplicación utiliza Google AdMob para mostrar anuncios. Estos servicios pueden emplear tecnologías como cookies o identificadores publicitarios conforme a sus propias políticas de privacidad.</p>
+</div>
 
-<h2>4. Publicidad</h2>
-<p>Los anuncios mostrados en la aplicación son gestionados por Google AdMob. Puedes consultar su política de privacidad en el sitio oficial de Google.</p>
-
+<div class="card">
 <h2>5. Notificaciones</h2>
-<p>La aplicación puede enviar notificaciones relacionadas con información financiera. Estas notificaciones no implican la recopilación de datos personales.</p>
+<p>La aplicación puede enviar notificaciones relacionadas con actualizaciones financieras. Estas notificaciones no implican recolección de datos personales.</p>
+</div>
 
-<h2>6. Seguridad</h2>
-<p>La aplicación no almacena información personal en servidores propios.</p>
+<div class="card">
+<h2>6. Fuentes de Información</h2>
+<p>Los datos mostrados provienen de fuentes públicas o APIs externas. MacroTRM no garantiza la disponibilidad continua ni la exactitud absoluta de dichos datos.</p>
+</div>
 
-<h2>7. Cambios en esta Política</h2>
+<div class="card">
+<h2>7. Seguridad</h2>
+<p>La aplicación no mantiene bases de datos propias con información personal del usuario.</p>
+</div>
+
+<div class="card">
+<h2>8. Exención de Responsabilidad</h2>
+<p>La información proporcionada tiene fines exclusivamente informativos y no constituye asesoría financiera, legal o de inversión.</p>
+<p>El uso de la información es responsabilidad exclusiva del usuario. Los desarrolladores de MacroTRM no asumen responsabilidad por decisiones económicas tomadas con base en los datos publicados.</p>
+</div>
+
+<div class="card">
+<h2>9. Cambios en la Política</h2>
 <p>Nos reservamos el derecho de actualizar esta política cuando sea necesario. Se recomienda revisarla periódicamente.</p>
+</div>
+    
+<div class="footer">
+© 2026 MacroTRM. Todos los derechos reservados.
+</div>
 
-<h2>8. Contacto</h2>
-<p>Si tienes preguntas sobre esta Política de Privacidad puedes contactarnos en:</p>
-<p><strong>davidguanga@gmail.com</strong></p>
+</div>
 
 </body>
 </html>
