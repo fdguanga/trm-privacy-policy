@@ -7,24 +7,24 @@
 
 <style>
 :root {
-    --primary: #1f2937;
+    --primary: #0f172a;
     --accent: #2563eb;
-    --bg: #f5f7fa;
+    --bg: #f1f5f9;
     --card: #ffffff;
-    --text: #374151;
-    --border: #e5e7eb;
+    --text: #334155;
+    --border: #e2e8f0;
 }
 
 body {
     margin: 0;
     font-family: 'Segoe UI', Roboto, Arial, sans-serif;
-    background: var(--bg);
+    background: linear-gradient(135deg, #eef2ff, #f8fafc);
     color: var(--text);
 }
 
 .container {
     max-width: 900px;
-    margin: 40px auto;
+    margin: 50px auto;
     padding: 20px;
 }
 
@@ -35,47 +35,60 @@ body {
 
 .header h1 {
     color: var(--primary);
+    font-size: 32px;
     margin-bottom: 10px;
 }
 
 .header p {
-    color: #6b7280;
+    color: #64748b;
     font-size: 14px;
 }
 
 .card {
     background: var(--card);
-    padding: 25px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-    margin-bottom: 20px;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    margin-bottom: 25px;
     border: 1px solid var(--border);
+    transition: transform 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-3px);
 }
 
 .card h2 {
     margin-top: 0;
     color: var(--primary);
-    font-size: 18px;
+    font-size: 20px;
+    margin-bottom: 15px;
     border-left: 4px solid var(--accent);
-    padding-left: 10px;
+    padding-left: 12px;
 }
 
 ul {
     padding-left: 20px;
+    line-height: 1.6;
+}
+
+p {
+    line-height: 1.7;
 }
 
 .footer {
     text-align: center;
-    margin-top: 40px;
+    margin-top: 50px;
     font-size: 14px;
-    color: #6b7280;
+    color: #64748b;
 }
-a {
-    color: var(--accent);
-    text-decoration: none;
-}
-a:hover {
-    text-decoration: underline;
+
+.highlight {
+    background: #eff6ff;
+    padding: 12px;
+    border-radius: 10px;
+    border-left: 4px solid var(--accent);
+    margin-top: 10px;
 }
 
 @media (max-width: 600px) {
@@ -93,63 +106,79 @@ a:hover {
 
 <div class="header">
     <h1>Política de Privacidad</h1>
-    <p>MacroTRM – Última actualización: 2026</p>
+    <p><strong>MacroTRM</strong> – Última actualización: 2026</p>
 </div>
 
 <div class="card">
 <h2>1. Información General</h2>
-<p>MacroTRM es una aplicación informativa que proporciona indicadores financieros de consulta pública, incluyendo la TRM y otros datos económicos.</p>
+<p>MacroTRM es una aplicación informativa que proporciona indicadores económicos y financieros de consulta pública, incluyendo la Tasa Representativa del Mercado (TRM) y otros datos relevantes en Colombia.</p>
+<p>La aplicación es independiente y no pertenece ni representa a ninguna entidad gubernamental o institución financiera.</p>
 </div>
 
 <div class="card">
 <h2>2. Datos Personales</h2>
-<p>La aplicación no solicita ni almacena directamente datos personales como nombre, correo electrónico, información bancaria o datos financieros del usuario.</p>
+<p>MacroTRM no solicita, almacena ni procesa directamente datos personales identificables como nombre, correo electrónico, documento de identidad o información financiera.</p>
+<p>La aplicación funciona sin necesidad de registro del usuario.</p>
 </div>
 
 <div class="card">
 <h2>3. Información Recopilada Automáticamente</h2>
-<p>Servicios de terceros pueden recopilar información técnica automáticamente, incluyendo:</p>
+<p>Servicios de terceros integrados pueden recopilar información técnica automáticamente, incluyendo:</p>
 <ul>
 <li>Identificadores publicitarios del dispositivo</li>
-<li>Información del sistema operativo</li>
-<li>Datos estadísticos de uso</li>
 <li>Dirección IP anonimizada</li>
+<li>Modelo del dispositivo y sistema operativo</li>
+<li>Datos estadísticos de uso y rendimiento</li>
 </ul>
+<p>Esta información es utilizada con fines estadísticos y publicitarios.</p>
 </div>
 
 <div class="card">
 <h2>4. Servicios de Terceros</h2>
-<p>La aplicación utiliza Google AdMob para mostrar anuncios. Estos servicios pueden emplear tecnologías como cookies o identificadores publicitarios conforme a sus propias políticas de privacidad.</p>
+<p>La aplicación puede utilizar servicios de terceros como Google AdMob para la visualización de anuncios.</p>
+<p>Estos servicios pueden emplear cookies o identificadores publicitarios conforme a sus propias políticas de privacidad.</p>
+<p>Se recomienda consultar directamente las políticas de dichos proveedores.</p>
 </div>
 
 <div class="card">
 <h2>5. Notificaciones</h2>
-<p>La aplicación puede enviar notificaciones relacionadas con actualizaciones financieras. Estas notificaciones no implican recolección de datos personales.</p>
+<p>MacroTRM puede enviar notificaciones informativas relacionadas con actualizaciones de indicadores económicos.</p>
+<p>Estas notificaciones no implican la recopilación ni almacenamiento de datos personales.</p>
 </div>
 
 <div class="card">
 <h2>6. Fuentes de Información</h2>
-<p>Los datos mostrados provienen de fuentes públicas o APIs externas. MacroTRM no garantiza la disponibilidad continua ni la exactitud absoluta de dichos datos.</p>
+<p>Los datos mostrados en la aplicación son obtenidos de <strong>fuentes públicas oficiales y APIs de acceso público</strong>, disponibles para consulta ciudadana.</p>
+
+<div class="highlight">
+MacroTRM actúa únicamente como herramienta de visualización y consulta de información pública, sin modificar ni alterar los datos originales proporcionados por las entidades fuente.
+</div>
+
+<p>La aplicación no garantiza la disponibilidad continua, exactitud absoluta o actualización en tiempo real de la información publicada.</p>
+<p>Los datos pueden estar sujetos a cambios por parte de la entidad que los emite.</p>
 </div>
 
 <div class="card">
 <h2>7. Seguridad</h2>
 <p>La aplicación no mantiene bases de datos propias con información personal del usuario.</p>
+<p>Se implementan prácticas estándar de seguridad para garantizar el correcto funcionamiento del servicio.</p>
 </div>
 
 <div class="card">
 <h2>8. Exención de Responsabilidad</h2>
-<p>La información proporcionada tiene fines exclusivamente informativos y no constituye asesoría financiera, legal o de inversión.</p>
-<p>El uso de la información es responsabilidad exclusiva del usuario. Los desarrolladores de MacroTRM no asumen responsabilidad por decisiones económicas tomadas con base en los datos publicados.</p>
+<p>La información proporcionada tiene fines exclusivamente informativos y educativos.</p>
+<p>No constituye asesoría financiera, contable, legal ni recomendación de inversión.</p>
+<p>El uso de la información es responsabilidad exclusiva del usuario.</p>
+<p>Los desarrolladores de MacroTRM no asumen responsabilidad por decisiones económicas tomadas con base en los datos publicados.</p>
 </div>
 
 <div class="card">
 <h2>9. Cambios en la Política</h2>
 <p>Nos reservamos el derecho de actualizar esta política cuando sea necesario. Se recomienda revisarla periódicamente.</p>
 </div>
-    
+
 <div class="footer">
-© 2026 MacroTRM. Todos los derechos reservados.
+© 2026 MacroTRM – Todos los derechos reservados.
 </div>
 
 </div>
